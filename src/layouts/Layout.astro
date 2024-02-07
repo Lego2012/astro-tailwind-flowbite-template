@@ -1,6 +1,6 @@
 ---
 interface Props {
-  title: string;
+   title: string;
 }
 
 const { title } = Astro.props;
@@ -13,55 +13,55 @@ import data from "../data/site.json";
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <ViewTransitions />
-    <meta charset="UTF-8" />
-    <meta name="description" content={data.siteDescription} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <script is:inline>
-      //check for dark mode in local storage using the theme var
-      if (localStorage.getItem("theme") === "dark") {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
-  </head>
-  <body>
-    <div class="bg-stone-100 dark:bg-slate-800 min-h-screen">
-      <Nav />
-      <div class="container">
-        <slot />
-        <Footer />
+   <head>
+      <ViewTransitions />
+      <meta charset="UTF-8" />
+      <meta name="description" content={data.siteDescription} />
+      <meta name="viewport" content="width=device-width" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <meta name="generator" content={Astro.generator} />
+      <title>{title}</title>
+      <script is:inline>
+         //check for dark mode in local storage using the theme var
+         if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+         } else {
+            document.documentElement.classList.remove("dark");
+         }
+      </script>
+   </head>
+   <body>
+      <div class="bg-stone-100 dark:bg-slate-800 min-h-screen">
+         <Nav />
+         <div class="container">
+            <slot />
+            <Footer />
+         </div>
       </div>
-    </div>
-    <style>
-      .container {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 1rem;
-      }
-      .section {
-        padding: 60px 0;
-      }
-      #footer {
-        position: fixed;
-      }
+      <style>
+         .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem;
+         }
+         .section {
+            padding: 60px 0;
+         }
+         #footer {
+            position: fixed;
+         }
 
-      @media (max-width: 767px) {
-        main {
-          min-height: calc(100vh - 69px);
-        }
-        footer > ul > li {
-          display: none;
-        }
-        footer {
-          position: relative;
-        }
-      }
-    </style>
-  </body>
+         @media (max-width: 767px) {
+            main {
+               min-height: calc(100vh - 69px);
+            }
+            footer > ul > li {
+               display: none;
+            }
+            footer {
+               position: relative;
+            }
+         }
+      </style>
+   </body>
 </html>

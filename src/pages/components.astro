@@ -1,7 +1,7 @@
 ---
 const title = "Components";
 const subtitle =
-  "Component overview. Some properties for this are inline (like heading, button, etc) while others have properties in the component file (table, modal, etc).";
+   "Component overview. Some properties for this are inline (like heading, button, etc) while others have properties in the component file (table, modal, etc).";
 
 import Layout from "../layouts/Layout.astro";
 
@@ -50,133 +50,137 @@ import Video from "../components/Video.astro";
 import VideoAlt from "../components/VideoAlt.astro";
 
 //Added 1/3/24
-import CustomImageScroll from "../components/CustomImageScroll.astro"; 
+import CustomImageScroll from "../components/CustomImageScroll.astro";
 ---
 
 <Layout title="Components">
-  <div>
-    <HeaderSmall title={title} subtitle={subtitle} />
-  </div>
-  <main>
-    <div class="container pb-24">
-      <Heading heading="Alert" />
-      <Alert body="Hey I'm an alert!" />
+   <div>
+      <HeaderSmall title={title} subtitle={subtitle} />
+   </div>
+   <main>
+      <div class="container pb-24">
+         <Heading heading="Alert" />
+         <Alert body="Hey I'm an alert!" />
 
-      <Heading heading="Avatar" />
-      <Avatar />
+         <Heading heading="Avatar" />
+         <Avatar />
 
-      <Heading heading="Badge" />
-      <Badge title="Badge Title" />
+         <Heading heading="Badge" />
+         <Badge title="Badge Title" />
 
-      <Heading heading="Breadcrumbs" />
-      <Breadcrumbs title="Here" parent="Something" parentLink="/contact" />
+         <Heading heading="Breadcrumbs" />
+         <Breadcrumbs title="Here" parent="Something" parentLink="/contact" />
 
-      <Heading heading="Buttons" />
-      <Button text="Click Me" href="https://github.com" />
+         <Heading heading="Buttons" />
+         <Button text="Click Me" href="https://github.com" />
 
-      <Heading heading="Button Group" />
-      <ButtonGroup
-        text1="Google"
-        href1="https://google.com"
-        text2="Yahoo"
-        href2="https://yahoo.com"
-      />
+         <Heading heading="Button Group" />
+         <ButtonGroup
+            text1="Google"
+            href1="https://google.com"
+            text2="Yahoo"
+            href2="https://yahoo.com"
+         />
 
-      <Heading heading="Card" />
-      <Card title="Card Title Here" body="Some Card Text" />
+         <Heading heading="Card" />
+         <Card title="Card Title Here" body="Some Card Text" />
 
-      <Heading heading="Device Mockups" />
-      <DeviceMockups
-        lightImage="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png"
-        darkImage="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png"
-      />
+         <Heading heading="Device Mockups" />
+         <DeviceMockups
+            lightImage="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-light.png"
+            darkImage="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-1-dark.png"
+         />
 
-      <Heading heading="Form" />
-      <Form />
+         <Heading heading="Form" />
+         <Form />
 
-      <Heading heading="Gallery" />
-      <Gallery />
+         <Heading heading="Gallery" />
+         <Gallery />
 
-      <Heading heading="Gallery (Masonry)" />
-      <GalleryMasonry />
+         <Heading heading="Gallery (Masonry)" />
+         <GalleryMasonry />
 
-      <Heading heading="Gallery (Featured)" />
-      <GalleryFeatured />
+         <Heading heading="Gallery (Featured)" />
+         <GalleryFeatured />
 
-      <Heading heading="Jumbotron" />
-      <Jumbotron />
+         <Heading heading="Jumbotron" />
+         <Jumbotron />
 
-      <Heading heading="Table" />
-      <Table />
+         <Heading heading="Table" />
+         <Table />
 
-      <Heading heading="Timeline" />
-      <Timeline />
+         <Heading heading="Timeline" />
+         <Timeline />
 
-      <Heading heading="Visual Image Heading" />
-      <VisualImageHeading />
+         <Heading heading="Visual Image Heading" />
+         <VisualImageHeading />
 
-      <Heading heading="Teams" />
-      <Team />
+         <Heading heading="Teams" />
+         <Team />
 
-      <Heading heading="Pricing" />
-      <Pricing />
+         <Heading heading="Pricing" />
+         <Pricing />
 
-      <Heading heading="FAQs" />
-      <FAQ />
+         <Heading heading="FAQs" />
+         <FAQ />
 
-      <Heading heading="Customer Logos" />
-      <CustomerLogos />
+         <Heading heading="Customer Logos" />
+         <CustomerLogos />
 
-      <Heading heading="Block Quote" />
-      <Blockquote text="Hey here is some quote from somewhere" />
+         <Heading heading="Block Quote" />
+         <Blockquote text="Hey here is some quote from somewhere" />
 
-      <Heading heading="Tooltip" />
-      <Tooltip button="Button Text Here" tooltip="Some tooltip text" />
+         <Heading heading="Tooltip" />
+         <Tooltip button="Button Text Here" tooltip="Some tooltip text" />
 
-      <Heading heading="Tabs" />
-      <Tabs />
+         <Heading heading="Tabs" />
+         <Tabs />
 
-      <Heading heading="Rating" />
-      <Rating rating={4} />
+         <Heading heading="Rating" />
+         <Rating rating={4} />
 
-      <Heading heading="Modal" />
-      <Modal />
+         <Heading heading="Modal" />
+         <Modal />
 
-      <Heading heading="Indicator Count" />
-      <IndicatorCount button="Messages" count={69} href="https://google.com" />
+         <Heading heading="Indicator Count" />
+         <IndicatorCount
+            button="Messages"
+            count={69}
+            href="https://google.com"
+         />
 
-      <Heading heading="Carousel" />
-      <Carousel />
+         <Heading heading="Carousel" />
+         <Carousel />
 
-      <Heading heading="Banner (see bottom)" />
-      <Banner text="Here is some text for the banner" />
+         <Heading heading="Banner (see bottom)" />
+         <Banner text="Here is some text for the banner" />
 
-      <Heading heading="Drawer" />
-      <Drawer />
+         <Heading heading="Drawer" />
+         <Drawer />
 
-      <Heading heading="Kbd" />
-      <p class="mb-8 mt-2 text-lg text-gray-900 dark:text-gray-200">
-        Press <Kbd key="Shift" /> + <Kbd key="U" /> in this example.
-      </p>
+         <Heading heading="Kbd" />
+         <p class="mb-8 mt-2 text-lg text-gray-900 dark:text-gray-200">
+            Press <Kbd key="Shift" /> + <Kbd key="U" /> in this example.
+         </p>
 
-      <Heading heading="Video" />
-      <p class="mb-8 mt-2 text-lg text-gray-900 dark:text-gray-200">
-        Link needs to be the embedded link from youtube.
-      </p>
-      <Video
-        youtube="https://www.youtube.com/embed/FBFbW2TNRL8?si=eckpNaRHRxQcO8i3"
-      />
+         <Heading heading="Video" />
+         <p class="mb-8 mt-2 text-lg text-gray-900 dark:text-gray-200">
+            Link needs to be the embedded link from youtube.
+         </p>
+         <Video
+            youtube="https://www.youtube.com/embed/FBFbW2TNRL8?si=eckpNaRHRxQcO8i3"
+         />
 
-      <Heading heading="Video Alt" />
-      <p class="mb-8 mt-2 text-lg text-gray-900 dark:text-gray-200">
-        Link needs to be the embedded link from youtube.
-      </p>
-      <VideoAlt
-        youtube="https://www.youtube.com/embed/8SqtRVx4yuc?si=tMAYAOBGstMZIyds"
-      />
+         <Heading heading="Video Alt" />
+         <p class="mb-8 mt-2 text-lg text-gray-900 dark:text-gray-200">
+            Link needs to be the embedded link from youtube.
+         </p>
+         <VideoAlt
+            youtube="https://www.youtube.com/embed/8SqtRVx4yuc?si=tMAYAOBGstMZIyds"
+         />
 
-      <Heading heading="Custom Image Scroll" />
-      <CustomImageScroll />
-    </div>
-  </main>
+         <Heading heading="Custom Image Scroll" />
+         <CustomImageScroll />
+      </div>
+   </main>
 </Layout>
